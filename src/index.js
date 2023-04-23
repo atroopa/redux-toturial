@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import {createStore, combineReducers} from "redux"
+import Counter from './components/Counter';
 
 //const store = createStore()
 
@@ -46,6 +47,6 @@ const initialState = {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Counter count={initialState.count} />
   </React.StrictMode>
 );
