@@ -7,7 +7,7 @@ import Counter from './components/Counter';
 import { Provider } from 'react-redux';
 
 
-const store = createStore(reducer);
+
 
 const initialState = {
   count:0,
@@ -26,7 +26,7 @@ const reducer = (state= initialState, action) => {
       return state;
   }
 }
-
+const store = createStore(reducer);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
