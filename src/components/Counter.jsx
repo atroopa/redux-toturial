@@ -1,5 +1,19 @@
 import React from 'react'
 
+const incrementCounter = number => {
+    return {
+        type:"INCREMENT_COUNTER",
+        payload: number
+    }
+}
+
+const decrementCounter = number => {
+    return {
+        type: "DECREMENT_COUNTER",
+        payload: number
+    }
+}
+
 
 
 const Counter = (props) => {
